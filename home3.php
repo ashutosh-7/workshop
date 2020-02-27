@@ -34,7 +34,7 @@ if(isset($_POST['name'])&&isset($_POST['comment']))
     $query="INSERT INTO `register` (`name`,`comment`) VALUES ('$name','$comment');";
      mysqli_query($conn,$query);
 }
- header('location:home3.php');
+//  header('location:home3.php');
  }//end of auth
 else 
 header('location:login_page.php');
